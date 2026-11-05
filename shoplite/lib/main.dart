@@ -63,12 +63,19 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text(widget.title),
         actions: [
-          IconButton(
-            onPressed: _resetCounter,
-            icon: const Icon(Icons.refresh),
-            tooltip: 'Reset',
-          ),
-        ],
+            Center(
+              child: Badge(
+                label: Text('$_count'),
+                child: const Icon(Icons.shopping_cart_outlined),
+    ),
+  ),
+  const SizedBox(width: 16),
+  IconButton(
+    onPressed: _resetCounter,
+    icon: const Icon(Icons.refresh),
+    tooltip: 'Reset',
+  ),
+],
       ),
       body: Center(
         child: Column(

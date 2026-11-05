@@ -16,7 +16,7 @@ void main() {
     await tester.pumpWidget(const ShopLiteApp());
 
     // Verify that our counter starts at 0.
-    expect(find.text('0'), findsOneWidget);
+    expect(find.text('0'), findsNWidgets(2));
     expect(find.text('1'), findsNothing);
 
     // Tap the '+' icon and trigger a frame.
@@ -25,7 +25,7 @@ void main() {
 
     // Verify that our counter has incremented.
     expect(find.text('0'), findsNothing);
-    expect(find.text('1'), findsOneWidget);
+    expect(find.text('1'), findsNWidgets(2));
   });
   
   testWidgets('Сагснаас бараа хасах тест', (WidgetTester tester) async {
@@ -38,13 +38,13 @@ void main() {
     await tester.tap(find.byIcon(Icons.add));
     await tester.pump();
 
-    expect(find.text('2'), findsOneWidget);
+    expect(find.text('2'), findsNWidgets(2));
 
     // - товч дарна.
     await tester.tap(find.byIcon(Icons.remove));
     await tester.pump();
 
     // Тоо 1 болсон эсэхийг шалгана.
-    expect(find.text('1'), findsOneWidget);
+    expect(find.text('1'), findsNWidgets(2));
   });
 }
