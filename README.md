@@ -29,13 +29,13 @@ Push хийсний дараа GitHub дээрх **Actions** табаас авт
 
 ## Лаборатори 1
 
-![flutter doctor](screenshots/flutter_doctor.png)
+![flutter doctor](screenshots/doctor.png)
 ![shoplite](screenshots/shoplite.png)
 
 ### lab1_dart
 
-- `dart test test/lab1_test.dart`: … / 25
-- Бонус B1 (`dart test test/bonus_test.dart`): хийсэн / хийгээгүй
+- `dart test test/lab1_test.dart`: 25/ 25
+- Бонус B1 (`dart test test/bonus_test.dart`): хийсэн
 
 ### D2. Төслийн бүтэц
 
